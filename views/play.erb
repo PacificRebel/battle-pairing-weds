@@ -1,5 +1,15 @@
 <h1>
 
-<%=@Player1%> v <%=@Player2%>
+  <%= @Player1 %> v <%= @Player2 %>
 
 </h1>
+
+<h2>
+
+  <%= @Player2 %> has 100HP
+
+</h2>
+
+<form action="/attack">
+  <input type="submit" value="Attack">
+</form>
