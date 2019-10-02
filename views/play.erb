@@ -1,12 +1,19 @@
 <h1>
 
-  <%= @Player1.name %> v <%= @Player2.name %>
+  Current Turn: <%= @game.current_turn.name %>
+
+  <br>
+
+  <%= @game.player1.name %> v <%= @game.player2.name %>
 
 </h1>
 
 <h2>
 
-  <%= @Player2.name %> has 100HP
+  <%= @game.player1.name %> has <%= @game.player1.hp %>
+  <br>
+  <%= @game.player2.name %> has <%= @game.player2.hp %>
+
 
 </h2>
 
