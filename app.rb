@@ -24,6 +24,7 @@ end
 get '/attack' do
   @Player1 = $Player1
   @Player2 = $Player2
+  $Player2.lose_health
   erb :attack
 end
 

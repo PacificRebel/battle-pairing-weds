@@ -8,4 +8,12 @@ describe Player do
 
     expect(player.name).to eq "Khaleesi"
   end
+
+  it "reduces player2's hp by 10" do
+
+    expect{ player.lose_health }.to change { player.hp }.by(-10)
+
+  end
+
+
 end
